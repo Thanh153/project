@@ -20,8 +20,7 @@
     "react-hook-form": "^6.12.1",
     "react-html2pdf": "^1.0.1",
     "react-router-dom": "^5.2.0",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4",
     "yup": "^0.32.1"
@@ -30,7 +29,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

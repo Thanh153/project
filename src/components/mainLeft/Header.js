@@ -104,7 +104,7 @@ function Header() {
                 onChange={handleSubmit(onSubmit)}
                 />
                  {errors.city && errors.city.type === "required" && (<p>This is a required</p>)}
-               <Button variant="contained"  style={style} to= "/basic/education" component={Link}>Next</Button>
+               <Button variant="contained"  style={style} to= "/project/basic/education" component={Link}>Next</Button>
                <Button   
                 variant="contained"
                 color="secondary"

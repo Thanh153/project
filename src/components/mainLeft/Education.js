@@ -94,7 +94,7 @@ function Education() {
                    {Text}
 
                 </Button>
-                <Button variant="contained" style={style} to= "/basic/experience" component={Link}>Next</Button>  
+                <Button variant="contained" style={style} to= "/project/basic/experience" component={Link}>Next</Button>  
                 <Button  
                 variant="contained"
                 color="secondary"

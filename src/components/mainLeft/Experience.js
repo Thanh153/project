@@ -182,7 +182,7 @@ function Experience() {
                  {Text}
 
                 </Button>
-                <Button variant="contained" style={style} to= "/basic/addittional" component={Link}>Next</Button>
+                <Button variant="contained" style={style} to= "/project/basic/addittional" component={Link}>Next</Button>
                 <Button  
                 variant="contained"
                 color="secondary"

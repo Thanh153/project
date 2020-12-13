@@ -84,7 +84,7 @@ function Basic() {
       <div className="left">
         <div className='headerTop'>
           <div styles={{ flexGrow: 2 }}>
-            <Link to="/" style={{ textAlign: "left" }}>
+            <Link to="/project" style={{ textAlign: "left" }}>
               <img src={logo} alt="logo" className="img2" />
             </Link>
           </div>
@@ -95,28 +95,28 @@ function Basic() {
             <Button
               className="headerLeft"
               component={Link}
-              to="/basic/header"
+              to="/project/basic/header"
             >
               Header
             </Button>
             <Button
               className="headerLeft"
               component={Link}
-              to="/basic/education"
+              to="/project/basic/education"
             >
               Education
             </Button>
             <Button
               className="headerLeft"
               component={Link}
-              to="/basic/experience"
+              to="/project/basic/experience"
             >
               Experience
             </Button>
             <Button
               className="headerLeft"
               component={Link}
-              to="/basic/addittional"
+              to="/project/basic/addittional"
             >
               Skills
             </Button>
@@ -124,16 +124,16 @@ function Basic() {
           <hr className="hr" />
           <div className="formsSection">
             <Switch>
-              <Route path='/basic/header'>
+              <Route path='/project/basic/header'>
                 <Header />
               </Route>
-              <Route path='/basic/experience'>
+              <Route path='/project/basic/experience'>
                 <Experience />
               </Route>
-              <Route path='/basic/education'>
+              <Route path='/project/basic/education'>
                 <Education />
               </Route>
-              <Route path='/basic/addittional'>
+              <Route path='/project/basic/addittional'>
                 <Skill />
               </Route>
             </Switch>

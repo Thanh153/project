@@ -63,7 +63,7 @@ function Right() {
             </Avatar>
           </Tooltip>
         </Link>
-        <Link href="/" >
+        <Link href="/project" >
           <Tooltip title="view" placement="right-start">
             <Avatar className={classes.green}>
               <VisibilityIcon />

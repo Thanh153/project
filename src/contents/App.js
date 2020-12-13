@@ -21,7 +21,7 @@ function Templates() {
 return (
   <div className= "left">
       <div className='headerLeft'>
-          <Link to="/" style={{ textAlign: "left" }}>
+          <Link to="/project" style={{ textAlign: "left" }}>
               <img src={logo} alt="logo" className="img2" />
           </Link>
       </div>
@@ -30,7 +30,7 @@ return (
           <Button
             className={classes.headerLink}
             component={Link}
-            to="/basic/header"
+            to="/project/basic/header"
           >
             Click vào đây
           </Button>
@@ -45,8 +45,8 @@ function App() {
         <ContentProvider>
           <BrowserRouter>
             <Switch> 
-              <Route path="/" component={Templates} exact />
-              <Route path="/basic" component={Basic} />
+              <Route path="/project" component={Templates} exact />
+              <Route path="/project/basic" component={Basic} />
             </Switch>
           </BrowserRouter>
       <Right />
