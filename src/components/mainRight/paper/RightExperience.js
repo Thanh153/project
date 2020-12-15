@@ -16,7 +16,7 @@ function RightExperience() {
         title = '';
     }else{
         title = ( 
-            <h3>Professional Experience</h3>
+            <h5>Professional Experience</h5>
         )
     }
     let Descrition1 = contentUse.experience.descrition.map((item, index) => {
@@ -38,7 +38,7 @@ function RightExperience() {
     return (
         <div className="rightExperence">
             <div className="">
-                <h3>{title}</h3>
+            <h6> {title}</h6>
                 <p>
                     <strong>{contentUse.experience.company}</strong> {""}
                     <p>{contentUse.experience.city}</p>
@@ -46,7 +46,7 @@ function RightExperience() {
                 <p>{contentUse.experience.position} {contentUse.experience.start} {""}
                     {contentUse.experience.end} 
                 </p>
-                <ul>{Descrition1}</ul>
+                    <ul>{Descrition1}</ul>
 
                 <p>
                     <strong>{contentUse.experience.company2}</strong> {""}
@@ -55,7 +55,7 @@ function RightExperience() {
                 <p>{contentUse.experience.position2} {contentUse.experience.start2} {""}
                     {contentUse.experience.end2} 
                 </p>
-                <ul>{Descrition2}</ul>
+                    <ul>{Descrition2}</ul>
             </div>
             
             

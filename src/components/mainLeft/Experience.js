@@ -4,7 +4,6 @@ import React, { useContext, useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { Route, Switch ,Link} from 'react-router-dom';
 import DeleteIcon from '@material-ui/icons/Delete';
-import Skill from './Skill';
 import './style.css'
 const style = {
     marginTop: 12,
@@ -34,14 +33,14 @@ function Experience() {
     }
     return (
         <div className="experience">
-            <h2>Professional Experience</h2>
+            <h4>Professional Experience</h4>
             <form
                 className='form'
                 noValidate
                 autoComplete="off"
                 onSubmit = {handleSubmit(onSubmit)}
             >
-                <h4>Company 1</h4>
+                <h5>Company 1</h5>
                 <TextField
                     id="outlined-basic"
                     label="Company"
@@ -108,7 +107,7 @@ function Experience() {
                 />
                 <hr />
 
-                <h4>Company 2</h4>
+                <h5>Company 2</h5>
 
                 <TextField
                     id="outlined-basic"

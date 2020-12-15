@@ -1,4 +1,5 @@
 
+
 const data = {
   header: {
     name: "Tran Thi Kim Thanh",
@@ -7,6 +8,7 @@ const data = {
     phone: "036759279",
     address: "29 Pham Nhu Xuong",
     city:'Da Nang'
+    
   },
   education: {
     institition: "Dai Hoc Su Pham Da Nan",

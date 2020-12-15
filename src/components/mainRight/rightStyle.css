@@ -27,6 +27,7 @@
 .hrrr{
     margin-top: 25px;
     margin-bottom: 25px;
+    
 }
 .rightExperence {
     display: flex;
@@ -43,4 +44,17 @@
 }
 .rightExperence strong {
     font-weight: bold;
+}
+.imgavt{
+    width: 200px;
+    height: 200px;
+    margin-left: 0;
+    background-image: url("https://trumboss.vn/wp-content/uploads/2018/10/xa-hoi-hoa-meo-con-696x530.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 240px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.hrrr{
+    
 }

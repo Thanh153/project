@@ -3,8 +3,10 @@
     display: flex;
     flex-direction: column;
 }
-h2{
-color: rgb(13, 163, 25);
+h5{
+
+  color: rgb(13, 163, 25);
+
 }
 h4{
     color: rgb(53, 47, 134);

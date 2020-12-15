@@ -16,13 +16,13 @@ function RightEducation() {
 
     }else{
         title = (
-            <h3>Education</h3>
+            <h5>Education</h5>
         )
     }
     return (
         <div className="rightExperence">
             <div className="">
-                <h3>  {title}</h3>
+                <h6> {title}</h6>
                 <p>{contentUse.education.institition}</p>
                 <p>{contentUse.education.city}</p>
                 <p>{contentUse.education.major}</p>

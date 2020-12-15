@@ -33,7 +33,7 @@ function Skill() {
     }
     return (
         <div className="skill">
-            <h2>Additional Skills</h2>
+            <h4>Additional Skills</h4>
             <form 
                 className='form'
                 noValidate 

@@ -22,14 +22,18 @@ function RightHeader() {
         <div>
             <div className="headerR">
                 <div className="contentHeader">
-                    <h1 className="h1Name">{contentUse.header.name}</h1>
-                    <p>
-                        {contentUse.header.gender} <br />
-                        {contentUse.header.email} <br/>
-                        {contentUse.header.phone} <br />
-                        {contentUse.header.address} <br />
-                        {contentUse.header.city} <br />
-                    </p>
+                    <div className="row">
+                        <div className="col s12">
+                            <h4 className="h1Name">{contentUse.header.name}</h4>
+                            <p>
+                                {contentUse.header.gender} <br />
+                                {contentUse.header.email} <br/>
+                                {contentUse.header.phone} <br />
+                                {contentUse.header.address} <br />
+                                {contentUse.header.city} <br />
+                            </p>
+                        </div>
+                    </div>
                     <hr className="hrrr"></hr>
                 </div>
             </div>

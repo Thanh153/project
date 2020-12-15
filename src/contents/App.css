@@ -1,6 +1,5 @@
 body {
-  margin: 0;
-  padding: 0;
+ 
   background: #ebeaea;
   width: 100%;
 }
@@ -51,7 +50,7 @@ body {
     top: -50px;
   }
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 680px) {
   .app {
     display: flex;
     flex-direction: column;
@@ -60,7 +59,7 @@ body {
 
   .left {
     background-color: #fff;
-    width: 100vw;
+    width: 190vw;
     box-shadow: 0 0 0.5cm #7b7d7d;
   }
 
@@ -68,7 +67,8 @@ body {
     height: 10vh;
     font-family: "Lora", serif;
   }
-
-  .right .page {
+  .topLeft{
+    width: 100vw;
   }
+
 }

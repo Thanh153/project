@@ -91,7 +91,8 @@ function Basic() {
           <div styles={{ flexGrow: 1 }}>{expData}</div>
         </div>
         <Router>
-          <div className="topLeft">
+        <div>
+            <div className="topLeft">
             <Button
               className="headerLeft"
               component={Link}
@@ -121,6 +122,7 @@ function Basic() {
               Skills
             </Button>
           </div>
+        </div>
           <hr className="hr" />
           <div className="formsSection">
             <Switch>

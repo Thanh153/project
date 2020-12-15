@@ -32,7 +32,7 @@ function Education() {
     }
     return (
         <div className="education">
-            <h2>Education</h2>
+            <h4>Education</h4>
             <form 
                  className='form' 
                 noValidate 

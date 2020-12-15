@@ -15,7 +15,7 @@ function RightSkill() {
         title = '' ;
     }else{
         title = (
-            <h3>Additional Skills</h3>
+            <h5>Additional Skills</h5>
         )
     };
     let bulletData = contentUse.skill.map((item, index) => {
@@ -28,9 +28,7 @@ function RightSkill() {
     console.log(bulletData);
     return (
         <div className='rightExperence'>
-            <h3>
-            {title}
-            </h3>
+          <h6> {title}</h6>
             <ul>{bulletData}</ul>
         </div>
     );
