@@ -34,22 +34,7 @@ body {
   width: 21cm;
   height: 29.7cm;
 }
-@media print {
-  @page {
-    margin: 0;
-  }
-  body * {
-    visibility: hidden;
-  }
-  .page * {
-    visibility: visible;
-  }
-  .page {
-    position: fixed;
-    left: 10px;
-    top: -50px;
-  }
-}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 680px) {
   .app {
     display: flex;

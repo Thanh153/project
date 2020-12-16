@@ -4,6 +4,7 @@ import React, { useContext, useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { Route, Switch ,Link} from 'react-router-dom';
 import DeleteIcon from '@material-ui/icons/Delete';
+import { useTranslate } from 'react-redux-multilingual'
 import './style.css'
 const style = {
     marginTop: 12,
@@ -16,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 function Experience() {
+    const t = useTranslate()
     const {content, updateExperienceData, removeData, setContent} = useContext(Context);
     const classes = useStyles();
     const [Text, setText] = useState('Add');
@@ -33,7 +35,7 @@ function Experience() {
     }
     return (
         <div className="experience">
-            <h4>Professional Experience</h4>
+            <h4>{t('experience')}</h4>
             <form
                 className='form'
                 noValidate

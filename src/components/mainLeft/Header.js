@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import { Link } from "react-router-dom";
 import DeleteIcon from '@material-ui/icons/Delete';
 import './style.css';
+import { useTranslate } from 'react-redux-multilingual'
 
 const style = {
     marginTop: 12,
@@ -18,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 function Header() {
+    const t = useTranslate()
     const { content, updateHeaderData, removeData, setContent } = useContext(Context);
     const { register, handleSubmit, errors, onBlur } = useForm();
     const classes = useStyles() ;
@@ -33,7 +35,7 @@ function Header() {
    
     return (
         <div className="">
-            <h4>Header</h4>
+            <h4>{t('header')}</h4>
             <form
                 className='form'
                 noValidate

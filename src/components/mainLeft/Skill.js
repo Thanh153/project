@@ -3,6 +3,7 @@ import { Context } from 'contexts/context';
 import React, { useContext, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import DeleteIcon from '@material-ui/icons/Delete';
+import { useTranslate } from 'react-redux-multilingual'
 import './style.css';
 const style = {
     marginTop: 12,
@@ -16,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
   }));
   
 function Skill() {
+    const t = useTranslate()
     const {content , updateSkillData, removeData, setContent} = useContext(Context);
     const classes = useStyles();
     const [Text, setText] = useState("Add")
@@ -33,7 +35,7 @@ function Skill() {
     }
     return (
         <div className="skill">
-            <h4>Additional Skills</h4>
+            <h4>{t('skill')}</h4>
             <form 
                 className='form'
                 noValidate 

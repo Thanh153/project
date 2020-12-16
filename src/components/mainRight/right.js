@@ -11,6 +11,8 @@ import ClearIcon from '@material-ui/icons/Clear';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import PdfContainer from 'components/SavePDF/PdfContainer'
 import { savePDF } from "@progress/kendo-react-pdf";
+import {useDispatch} from "react-redux"
+import {changeLanguage} from "../../translation/translationSlice"
 const useStyles = makeStyles((theme) => ({
   root: {
     display :'flex' ,
@@ -29,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Right() {
+  const dispatch = useDispatch()
   const { setContent } = useContext(Context);
   const classes = useStyles();
 
@@ -46,8 +49,10 @@ function Right() {
     savePDF(html, { 
       paperSize: 'A4',
       fileName: 'form.pdf',
-      margin: '0 auto',
     })
+}
+const handleChangeClick = () =>{
+  dispatch(changeLanguage())
 }
   // const handleSaveToPDF = (event) => {
   //   event.preventDefault();
@@ -73,6 +78,7 @@ function Right() {
             <PdfContainer createPdf={createPdf}>
                 <Paper />
           </PdfContainer>
+          <button onClick={()=>handleChangeClick()}>change</button>
       </div>
     </div>
   )

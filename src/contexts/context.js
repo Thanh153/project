@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react'
-import fakeData from '../utils/fake_data'
+import {dataEN,dataVI} from '../utils/fake_data'
 
 export const Context = createContext();
 
@@ -29,7 +29,8 @@ const ContentProvider = (props) =>{
     }
     function addFakeData(){
         setControl(true)
-        setContentFake(fakeData)
+
+        setContentFake(dataVI)
     }
     function removeData(){
         setControl(false)
