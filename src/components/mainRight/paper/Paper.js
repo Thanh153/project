@@ -12,7 +12,6 @@ function Paper() {
     return (
         <div className="paper">
             <div style={{ size: 'A4' }}>  
-            {t('hello')}
                 <RightHeader />
                 <RightEducation />
                 <RightExperience />

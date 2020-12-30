@@ -9,7 +9,8 @@ import './style.css'
 const style = {
     marginTop: 12,
     marginLeft: 8,
-    marginRight: 8
+    marginRight: 8,
+    paddingTop: 10
 }
 const useStyles = makeStyles((theme) => ({
     button: {
@@ -42,10 +43,10 @@ function Experience() {
                 autoComplete="off"
                 onSubmit = {handleSubmit(onSubmit)}
             >
-                <h5>Company 1</h5>
+                <h5>{t('company1')}</h5>
                 <TextField
                     id="outlined-basic"
-                    label="Company"
+                    label={t('company')}
                     name="company"
                     variant="outlined"
                     style={style}
@@ -55,7 +56,7 @@ function Experience() {
                 />
                 <TextField
                     id="outlined-basic"
-                    label="City/State/Country"
+                    label={t('state')}
                     name="city"
                     variant="outlined"
                     style={style}
@@ -64,7 +65,7 @@ function Experience() {
                 />
                 <TextField
                     id="outlined-basic"
-                    label="Position"
+                    label={t('position')}
                     name="position"
                     variant="outlined"
                     style={style}
@@ -73,7 +74,7 @@ function Experience() {
                 />
                 <TextField
                     id="outlined-basic"
-                    label="Start MM/YYYY"
+                    label={t('start')}
                     name="start"
                     variant="outlined"
                     style={style}
@@ -82,7 +83,7 @@ function Experience() {
                 />
                 <TextField
                     id="outlined-basic"
-                    label="End MM/YYYY"
+                    label={t('end')}
                     name="end"
                     variant="outlined"
                     style={style}
@@ -91,7 +92,7 @@ function Experience() {
                 />
                 <TextField
                     id="outlined-basic"
-                    label="Descrition"
+                    label={t('descrition')}
                     name="descrition[0]"
                     variant="outlined"
                     style={style}
@@ -100,7 +101,7 @@ function Experience() {
                 />
                 <TextField
                     id="outlined-basic"
-                    label="Descrition"
+                    label={t('descrition')}
                     name="descrition[1]"
                     variant="outlined"
                     style={style}
@@ -109,11 +110,11 @@ function Experience() {
                 />
                 <hr />
 
-                <h5>Company 2</h5>
+                <h5>{t('company2')}</h5>
 
                 <TextField
                     id="outlined-basic"
-                    label="Company"
+                    label={t('company')}
                     name="company2"
                     variant="outlined"
                     style={style}
@@ -122,7 +123,7 @@ function Experience() {
                 />
                 <TextField
                     id="outlined-basic"
-                    label="City/State/Country"
+                    label={t('state')}
                     name="city2"
                     variant="outlined"
                     style={style}
@@ -131,7 +132,7 @@ function Experience() {
                 />
                 <TextField
                     id="outlined-basic"
-                    label="Position"
+                    label={t('position')}
                     name="position2"
                     variant="outlined"
                     style={style}
@@ -140,7 +141,7 @@ function Experience() {
                 />
                 <TextField
                     id="outlined-basic"
-                    label="Start MM/YYYY"
+                    label={t('start')}
                     name="start2"
                     variant="outlined"
                     style={style}
@@ -149,7 +150,7 @@ function Experience() {
                 />
                 <TextField
                     id="outlined-basic"
-                    label="End MM/YYYY"
+                    label={t('end')}
                     name="end2"
                     variant="outlined"
                     style={style}
@@ -158,7 +159,7 @@ function Experience() {
                 />
                 <TextField
                     id="outlined-basic"
-                    label="Descrition"
+                    label={t('descrition')}
                     name="descrition2[0]"
                     variant="outlined"
                     style={style}
@@ -167,7 +168,7 @@ function Experience() {
                 />
                 <TextField
                     id="outlined-basic"
-                    label="Descrition"
+                    label={t('descrition')}
                     name="descrition2[1]"
                     variant="outlined"
                     style={style}
@@ -180,17 +181,17 @@ function Experience() {
                 color="secondary" 
                 disableElevation
                 style={style}>
-                 {Text}
+                 {t('text')}
 
                 </Button>
-                <Button variant="contained" style={style} to= "/project/basic/addittional" component={Link}>Next</Button>
+                <Button variant="contained" style={style} to= "/project/basic/addittional" component={Link}>{t('next')}</Button>
                 <Button  
                 variant="contained"
                 color="secondary"
                 className={classes.button}
                 startIcon={<DeleteIcon />}   
                 onClick={handleDeleteExperience}  
-                style={style} >Delete</Button>
+                style={style} >{t('delete')}</Button>
             </form>
         </div>
     )

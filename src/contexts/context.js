@@ -30,7 +30,7 @@ const ContentProvider = (props) =>{
     function addFakeData(){
         setControl(true)
 
-        setContentFake(dataVI)
+        setContentFake(dataEN)
     }
     function removeData(){
         setControl(false)

@@ -85,7 +85,7 @@ function Skill() {
                 color="secondary" 
                 disableElevation
                 style={style}>
-                    {Text}
+                   {t('text')}
 
                 </Button>
                 <Button  variant="contained"
@@ -93,7 +93,7 @@ function Skill() {
                 className={classes.button}
                 startIcon={<DeleteIcon />}   
                 onClick={handleDeleteSkill}  
-                style={style} >Delete</Button>
+                style={style} >{t('delete')}</Button>
             </form>
         </div>
     )

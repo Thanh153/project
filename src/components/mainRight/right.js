@@ -11,8 +11,10 @@ import ClearIcon from '@material-ui/icons/Clear';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import PdfContainer from 'components/SavePDF/PdfContainer'
 import { savePDF } from "@progress/kendo-react-pdf";
-import {useDispatch} from "react-redux"
+import {useDispatch, useSelector} from "react-redux"
 import {changeLanguage} from "../../translation/translationSlice"
+import GTranslateIcon from '@material-ui/icons/GTranslate';
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display :'flex' ,
@@ -31,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Right() {
+  const currentLanguage = useSelector(state => state.Intl)
   const dispatch = useDispatch()
   const { setContent } = useContext(Context);
   const classes = useStyles();
@@ -52,7 +55,7 @@ function Right() {
     })
 }
 const handleChangeClick = () =>{
-  dispatch(changeLanguage())
+  dispatch(changeLanguage(currentLanguage.locale === "en" ? "vi" : "en"))
 }
   // const handleSaveToPDF = (event) => {
   //   event.preventDefault();
@@ -75,10 +78,12 @@ const handleChangeClick = () =>{
             </Avatar>
           </Tooltip>
         </Link>
-            <PdfContainer createPdf={createPdf}>
+        <Avatar className={classes.pink} onClick={()=>handleChangeClick()}>
+            <GTranslateIcon  />
+        </Avatar>
+        <PdfContainer createPdf={createPdf}>
                 <Paper />
-          </PdfContainer>
-          <button onClick={()=>handleChangeClick()}>change</button>
+        </PdfContainer>
       </div>
     </div>
   )

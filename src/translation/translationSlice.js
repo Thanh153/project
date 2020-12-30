@@ -1,13 +1,14 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { IntlActions } from 'react-redux-multilingual'
+
 const translations= createSlice({
   name: 'Intl',
   initialState: {
-    locale:'vi'
+    locale:'en'
   },
   reducers: {
-    changeLanguageReducer: (state) => {
-      state.locale = "en"
+    changeLanguageReducer: (state, action) => {
+      state.locale = action.payload;
+
     },
   }
 });

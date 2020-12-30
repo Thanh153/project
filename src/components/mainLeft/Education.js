@@ -43,7 +43,7 @@ function Education() {
             >
                 <TextField 
                 id="outlined-basic" 
-                label="Institution" 
+                label={t("institution")} 
                 name="institition"
                 variant="outlined" 
                 inputRef ={register}
@@ -52,7 +52,7 @@ function Education() {
                 />
                  <TextField 
                 id="outlined-basic" 
-                label="City/State/Country" 
+                label={t('state')} 
                 name="city"
                 variant="outlined" 
                 onBlur={onBlur} 
@@ -62,7 +62,7 @@ function Education() {
                 />
                  <TextField 
                 id="outlined-basic" 
-                label="Major" 
+                label={t('major')} 
                 name="major"
                 variant="outlined" 
                 inputRef ={register}
@@ -71,7 +71,7 @@ function Education() {
                 />
                  <TextField 
                 id="outlined-basic" 
-                label="Gradution Year" 
+                label = {t('gradution')}
                 name="gradution"
                 variant="outlined" 
                 inputRef ={register}
@@ -80,7 +80,7 @@ function Education() {
                 />
                  <TextField 
                 id="outlined-basic" 
-                label="Additional Info" 
+                label={t('add')}
                 name="add"
                 variant="outlined" 
                 inputRef ={register}
@@ -93,17 +93,17 @@ function Education() {
                 color="secondary" 
                 disableElevation
                 style={style}>
-                   {Text}
+                   {t('text')}
 
                 </Button>
-                <Button variant="contained" style={style} to= "/project/basic/experience" component={Link}>Next</Button>  
+                <Button variant="contained" style={style} to= "/project/basic/experience" component={Link}>{t('next')}</Button>  
                 <Button  
                 variant="contained"
                 color="secondary"
                 className={classes.button}
                 startIcon={<DeleteIcon />}  
                 onClick={handleDeleteEducation}  
-                style={style} >Delete</Button>
+                style={style}>{t('delete')}</Button>
 
             </form>
         </div>

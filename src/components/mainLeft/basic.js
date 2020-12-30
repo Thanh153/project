@@ -7,6 +7,7 @@ import Experience from './Experience'
 import Header from './Header'
 import Skill from './Skill'
 import logo from 'asset/logoCV.jpg';
+import { useTranslate } from 'react-redux-multilingual/lib/context';
 
 const useStyles = makeStyles({
   rootAdd: {
@@ -44,6 +45,7 @@ const useStyles = makeStyles({
 
 
 function Basic() {
+  const t = useTranslate()
   const { control, addFakeData, removeData } = useContext(Context)
   const classes = useStyles();
   function useFakeData(e) {
@@ -62,7 +64,7 @@ function Basic() {
         onClick={clearFakeData}
         className={classes.rootRemove}
       >
-        Remove Example
+        {t('remove')}
       </Button>
     );
   } else {
@@ -73,7 +75,7 @@ function Basic() {
         className={classes.rootAdd}
 
       >
-        Example
+        {t('example')}
       </Button>
     );
   }
@@ -98,28 +100,28 @@ function Basic() {
               component={Link}
               to="/project/basic/header"
             >
-              Header
+              {t('headerLink')}
             </Button>
             <Button
               className="headerLeft"
               component={Link}
               to="/project/basic/education"
             >
-              Education
+              {t('educationLink')}
             </Button>
             <Button
               className="headerLeft"
               component={Link}
               to="/project/basic/experience"
             >
-              Experience
+              {t('experienceLink')}
             </Button>
             <Button
               className="headerLeft"
               component={Link}
               to="/project/basic/addittional"
             >
-              Skills
+              {t('skillLink')}
             </Button>
           </div>
         </div>

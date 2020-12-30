@@ -4,12 +4,15 @@
     flex-direction: column;
 }
 h5{
-
+  font-size: 20px;
   color: rgb(13, 163, 25);
+  margin-bottom: 0px;
 
 }
 h4{
     color: rgb(53, 47, 134);
+    font-size: 25px;
+    margin-bottom: 0px;
 }
 hr {
     width: 95%;
@@ -26,7 +29,7 @@ img {
 }
 .topLeft {
     display: flex;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     justify-content: space-evenly;
     background-color: azure;
@@ -89,3 +92,23 @@ img {
   border: 1px solid #dadada;
   font-size: 16px;
 }
+.browser-default{
+  font: inherit;
+  color: #706c6c;
+  border: 1px solid #c5bfbf;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: block;
+  background: none;
+  box-sizing: content-box;
+  letter-spacing: inherit;
+  animation-duration: 10ms;
+  padding: 17px 14px ;
+}
+.browser-default:hover{
+  border: 1px solid black;
+}
+.browser-default:active{
+  border: 1px solid blue;
+}
+

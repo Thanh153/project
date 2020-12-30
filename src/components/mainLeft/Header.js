@@ -9,7 +9,7 @@ import { useTranslate } from 'react-redux-multilingual'
 
 const style = {
     marginTop: 12,
-    marginBottom    : 8,
+    
    
 }
 const useStyles = makeStyles((theme) => ({
@@ -43,7 +43,7 @@ function Header() {
             >
                 <TextField
                     id="outlined-basic"
-                    label="Full Name"
+                    label= {t('name')}
                     name="name"
                     variant="outlined"
                     onBlur={onBlur}
@@ -55,17 +55,17 @@ function Header() {
                 <select class="browser-default"  
                         name='gender'
                         onChange={handleSubmit(onSubmit)}
-                        style={style}
-                        ref={register}>
-                    <option value="" disabled selected>Choose your option</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Other">Other</option>
+                        ref={register}
+                        >
+                    <option value="" disabled selected>{t('option')}</option>
+                    <option value={t('male')}>{t('male')}</option>
+                    <option value={t('female')}>{t('female')}</option>
+                    <option value={t('other')}>{t('other')}</option>
                 </select>
 
                 <TextField
                     id="outlined-basic"
-                    label="Email"
+                    label={t('email')}
                     name="email"
                     placeholder="bluebill1049@gamil.com"
                     variant="outlined"
@@ -78,7 +78,7 @@ function Header() {
                 {errors.email && errors.email.type === "pattern" && (<p>Email is not valid, please re-enter your email</p>)}
                 <TextField
                     id="outlined-basic"
-                    label="Phone"
+                    label={t('phone')}
                     name="phone"
                     variant="outlined"
                     defaultValue={content.header.phone}
@@ -90,7 +90,7 @@ function Header() {
                 {errors.phone && errors.phone.type === "pattern" && (<p>Phone number must be 10 - 11 digits long</p>)}
                 <TextField
                     id="outlined-basic"
-                    label="Address"
+                    label={t('address')}
                     name="address"
                     variant="outlined"
                     defaultValue={content.header.address}
@@ -101,7 +101,7 @@ function Header() {
                 {errors.address && errors.address.type === "required" && (<p>This is a required</p>)}
                 <TextField
                     id="outlined-basic"
-                    label="City"
+                    label={t('city')}
                     variant="outlined"
                     name="city"
                     defaultValue={content.header.city}
@@ -111,14 +111,13 @@ function Header() {
                 />
                 {errors.city && errors.city.type === "required" && (<p>This is a required</p>)}
 
-                <Button variant="contained" style={style} to="/project/basic/education" component={Link}>Next</Button>
+                <Button variant="contained" style={style} to="/project/basic/education" component={Link}>{t('next')}</Button>
                 <Button
                     variant="contained"
                     color="secondary"
-                    className={classes.button}
                     startIcon={<DeleteIcon />}
                     onClick={handleDeleteHeader}
-                    style={style} >Delete</Button>
+                    style={style} >{t('delete')}</Button>
             </form>
         </div>
     )

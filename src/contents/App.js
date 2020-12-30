@@ -6,8 +6,8 @@ import Right from 'components/mainRight/right';
 import { Button, makeStyles } from '@material-ui/core';
 import logo from '../asset/logoCV.jpg';
 import logoClick from '../asset/logoClick.jpg';
-import 'materialize-css/dist/css/materialize.min.css';
-import 'materialize-css/dist/js/materialize.min.js';
+// import 'materialize-css/dist/css/materialize.min.css';
+// import 'materialize-css/dist/js/materialize.min.js';
 
 function Templates() {
   const useStyles = makeStyles({
